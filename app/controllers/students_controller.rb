@@ -1,6 +1,3 @@
-require 'pry'
-
-
 class StudentsController < ApplicationController
   before_action :set_student, only: :show
 
@@ -10,7 +7,6 @@ class StudentsController < ApplicationController
 
   def show
     @student = Student.find(params[:id])
-    binding.pry
   end
 
   def activate
